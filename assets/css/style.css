@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	background: #fff;
+	font-family: "lato", "Arial";
+	font-weight: 300;
+	font-size: 20px;
+	/*The text-rendering CSS property provides information to the rendering engine about what to optimize for when rendering text.*/
+	text-rendering: optimizeLegibility;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
+	background-position: center center;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+h1 {
+	margin: 0;
+	color: white; 
+}
+
+.hero-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate*/
+	transform: translate(-50%, -50%);
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
