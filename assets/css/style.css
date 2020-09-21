@@ -1,3 +1,6 @@
+/*--------------------------*/
+/* BASIC SETUP */
+/*--------------------------*/
 * {
 	margin: 0;
 	padding: 0;
@@ -14,14 +17,16 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
-	background-position: center center;
-	background-size: cover; 
-	background-repeat: no-repeat;
-	height: 100vh;
+/*--------------------------*/
+/* REUSABLE COMPONENTS */
+/*--------------------------*/
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
+/*---- BUTTONS ----*/
 h1 {
 	margin: 0;
 	color: #fff; 
@@ -31,23 +36,9 @@ h1 {
 	letter-spacing: 1px;
 	word-spacing: 4px;
 	margin-bottom: 20px;
-
 }
 
-.hero-text-box {
-	position: absolute;
-	width: 1140px;
-	top: 50%;
-	left: 50%;
-	/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate*/
-	transform: translate(-50%, -50%);
-}
-
-.row {
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
+/*---- BUTTONS ----*/
 .btn:link,
 .btn:visited {
 	display: inline-block;
@@ -79,4 +70,60 @@ h1 {
 	transition: all 0.3s;
 }
 
+/*--------------------------*/
+/* HEADER */
+/*--------------------------*/
 
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
+	background-position: center center;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.hero-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate*/
+	transform: translate(-50%, -50%);
+}
+
+/*---- LOGO ----*/
+.logo {
+	height: 110px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+/*---- NAVIGATION ----*/
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 0;
+	color: #fff;
+	font-weight: 500;
+	font-size: 0.9rem;
+	border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #E67E22;
+	transition: border-bottom 0.3s;
+}
