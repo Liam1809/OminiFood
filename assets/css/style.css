@@ -26,7 +26,7 @@ html {
 }
 
 section {
-	padding: 80px 0;
+	padding-top: 80px;
 }
 
 .box {
@@ -130,7 +130,8 @@ h3 {
 	color: #fff;
 	background: #cf6d17;
 	border: 1px solid #cf6d17;
-	transition: all 0.3s;
+	/*all - background-color, border, color*/
+	transition: all 0.3s; 
 }
 
 /*--------------------------*/
@@ -188,5 +189,48 @@ header {
 .main-nav li a:active {
 	border-bottom: 2px solid #E67E22;
 	transition: border-bottom 0.3s;
+}
+
+/*--------------------------*/
+/* FEATURES SECTION */
+/*--------------------------*/
+.section-features .p-long {
+	margin-bottom: 30px;
+}
+
+/*--------------------------*/
+/* MEALS SECTION */
+/*--------------------------*/
+/*-----ul-----*/
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+/*-----li-----*/
+.meals-showcase li {
+	width: 25%;
+	display: block;
+	float: left;
+}
+/*-----figure-----*/
+.meal-photo {
+	width: 100%;
+	margin: 0;
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/overflow*/
+	overflow: hidden;
+	background: #000;
+}
+/*-----img-----*/
+.meal-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s;	
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(1.05);
 }
 
