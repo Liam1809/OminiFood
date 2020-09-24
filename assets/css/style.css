@@ -34,6 +34,12 @@ section {
 
 }
 
+#container::after { 
+  content: "";
+  display: block; 
+  clear: both;
+}
+
 /*---- HEADINGS ----*/
 h1, h2, h3 {
 	color: #5A5A5A;
@@ -75,9 +81,11 @@ h3 {
 }
 
 /*---- PARAGRAPH ----*/
-.p-long {
+p {
 	color: #5A5A5A;
 	line-height: 145%;
+}
+.p-long {
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
@@ -89,10 +97,12 @@ h3 {
 
 .box p {
 	font-size: 0.95rem;
-	color: #5A5A5A;
-	line-height: 145%;
 }
 
+.works-step p {
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
 /*---- ICONS ----*/
 .icon-big {
 	font-size: 350%;
@@ -233,4 +243,58 @@ header {
 	opacity: 1;
 	transform: scale(1.05);
 }
+
+/*--------------------------*/
+/* HOW IT WORKS */
+/*--------------------------*/
+
+.section-steps {
+	background: #EBEBEB;
+	padding-bottom: 80px;
+}
+/*-----right column-----*/
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%;
+	margin-top: 30px;
+}
+/*-----left column-----*/
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+/*-----iPhone app screen-----*/
+.app-screen {
+	width: 40%;
+	height: auto;
+	margin-right: 45px;
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+	margin-bottom: 40px;
+}
+/*-----circle steps-----*/
+.works-step div {
+	color: #E67E22;
+	display: inline-block;
+	border: 2px solid #E67E22;
+	padding: 8px;
+	width: 55px;
+	height: 55px;
+	font-size: 1.5rem;
+	text-align: center;
+	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+}
+/*-----buttons download-----*/
+.btn-app img {
+	height: 50px;
+	margin-right: 10px;
+}
+
 
