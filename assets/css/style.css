@@ -17,6 +17,19 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom:1}
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+/*#container::after { 
+  content: "";
+  display: block; 
+  clear: both;
+}*/
 /*--------------------------*/
 /* REUSABLE COMPONENTS */
 /*--------------------------*/
@@ -32,12 +45,6 @@ section {
 .box {
 	padding: 1%;
 
-}
-
-#container::after { 
-  content: "";
-  display: block; 
-  clear: both;
 }
 
 /*---- HEADINGS ----*/
