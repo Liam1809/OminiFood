@@ -185,9 +185,8 @@ a:active {
 /*--------------------------*/
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
-	background-position: center center;
 	background-size: cover; 
-	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -354,3 +353,48 @@ header {
 	margin-bottom: 5px;
 }
 
+/*--------------------------*/
+/* TESTIMONIALS SECTION */
+/*--------------------------*/
+.section-testimonials {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+.section-testimonials h2 {
+	color: #fff;
+	font-weight: 300;
+}
+
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	position: relative;
+	margin-top: 40px;
+}
+
+blockquote:before {
+	/*https://css-tricks.com/snippets/html/glyphs/*/
+	content: "\201C";
+	display: block;
+	font-size: 400%;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
+
+cite {
+	display: block;
+	font-size: 0.9rem;
+	margin-top: 25px;
+}
+
+cite img {
+	height: 45px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
