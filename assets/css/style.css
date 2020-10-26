@@ -494,3 +494,74 @@ input[type="checkbox"] {
 .label-form {
 	margin-left: 30%;
 }
+
+/*--------------------------*/
+/* FOOTER */
+/*--------------------------*/
+
+footer {
+	background: #333;
+	padding-bottom: 30px;
+}
+
+footer p {
+	color: #888;
+	text-align: center;
+	font-size: 90%;
+	position: relative;
+	top: 20px;
+	left: 0;
+}
+.navigation-link {
+	list-style: none;
+	float: left;
+}
+
+.navigation-icon {
+	list-style: none;
+	float: right;
+}
+
+.navigation-link li,
+.navigation-icon li{
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.navigation-link li:last-child,
+.navigation-icon li:last-child {
+	margin-right: 0;
+}
+
+.navigation-link li a:link,
+.navigation-link li a:visited,
+.navigation-icon li a:link,
+.navigation-icon li a:visited {
+	text-decoration: none;
+	border: none;
+	font-size: 120%;
+	color: #888;
+	transition: color 0.3s;
+}
+
+.navigation-link li a:hover,
+.navigation-link li a:active {
+	color: #fff;
+}
+
+/*https://www.lockedownseo.com/social-media-colors/*/
+.navigation-icon-facebook:hover {
+	color: #3b5998;
+}
+
+.navigation-icon-twitter:hover {
+	color: #1da1f2;
+}
+
+.navigation-icon-google:hover {
+	color: #ea4335;
+}
+
+.navigation-icon-instagram:hover {
+	color: #c32aa3;
+}
