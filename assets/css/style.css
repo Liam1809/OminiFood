@@ -217,6 +217,14 @@ header {
 	margin-top: 20px;
 }
 
+.logo-black { 
+    display: none;
+    height: 60px;
+	width: auto;
+	float: left;
+	margin-top: 5px;
+    margin-bottom: 10px;
+}
 /*---- NAVIGATION ----*/
 .main-nav {
 	float: right;
@@ -247,6 +255,28 @@ header {
 	transition: border-bottom 0.3s;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 2px #dddddd;
+    z-index: 1;
+    transition: all 500ms;
+}
+
+.sticky .main-nav { margin-top: 25px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding: 15px 0;
+	color: #555;
+}
+
+.sticky .logo { display: none; }
+
+.sticky .logo-black { display: block; }
 /*--------------------------*/
 /* FEATURES SECTION */
 /*--------------------------*/
@@ -587,4 +617,24 @@ footer p {
 
 .navigation-icon-instagram:hover {
 	color: #c32aa3;
+}
+
+/*--------------------------*/
+/* ANIMATION */
+/*--------------------------*/
+.js-wp-1,
+.js-wp-2,
+.js-wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js-wp-4 {
+    animation-duration: 1s;
+}
+
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated {
+    opacity: 1;
 }

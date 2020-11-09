@@ -7,6 +7,7 @@
 	<meta charset="utf-8" name="viewport" content="width=width-device, inital-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/queries.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -14,29 +15,32 @@
 </head>
 <body>
 	<header>
-		<div class="row">
-			<img src="assets/imgs/logo-white.png" alt="Ominifood Logo" class="logo">
-			<ul class="main-nav">
-				<li><a href="#">Food delivery</a></li>
-				<li><a href="#">How it works</a></li>
-				<li><a href="#">Our cities</a></li>
-				<li><a href="#">Sign up</a></li>
-			</ul>
-		</div>
+        <nav>
+            <div class="row">
+                <img src="assets/imgs/logo-white.png" alt="Ominifood Logo" class="logo">
+                <img src="assets/imgs/logo.png" alt="Ominifood Logo" class="logo-black">
+                <ul class="main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
 		<div class="hero-text-box">
 			<h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-			<a class="btn btn-1" href="#">I'm hungry</a>
-			<a class="btn btn-2" href="#">Show me more</a>
+			<a class="btn btn-1 js-scroll-to-plans" href="#">I'm hungry</a>
+			<a class="btn btn-2 js-scroll-to-start" href="#">Show me more</a>
 		</div>
 	</header>
 
-	<section class="section-features">
+	<section class="section-features js-section-features" id="features">
 		<div class="row">
 			<h2>Get food fast &mdash; not fast food</h2>
 			<p class="p-long">Hello, we are Omnifood, your new premium food delivery service. We know you are always busy. No time for cooking. So let us take care of that, we are really good at it, we promise!</p>
 		</div>
 
-		<div class="row">
+		<div class="row js-wp-1">
 			<div class="col span-1-of-4 box">
 				<ion-icon name="calendar-outline" class="icon-big"></ion-icon>
 				<h3>Up to 365 days/year</h3>
@@ -107,14 +111,14 @@
 		</ul>
 	</section>
 
-	<section class="section-steps section-spacing">
+	<section class="section-steps section-spacing" id="works">
 		<div class="row">
 			<h2>How it works &mdash; Simple as 1, 2, 3</h2>
 		</div>
 
 		<div class="row">
 			<div class="col span-1-of-2 steps-box">
-				<img src="assets/imgs/app-iPhone-2.png" alt="Omnifood App on Iphone" class="app-screen">
+				<img src="assets/imgs/app-iPhone-2.png" alt="Omnifood App on Iphone" class="app-screen js-wp-2">
 			</div>
 
 			<div class="col span-1-of-2 steps-box">
@@ -137,11 +141,11 @@
 		</div>
 	</section>
 
-	<section class="section-cities section-spacing">
+	<section class="section-cities section-spacing" id="cities">
 		<div class="row">
 			<h2>We're currently in these cities</h2>
 		</div>
-		<div class="row">
+		<div class="row js-wp-3">
 			<div class="col span-1-of-4 box">
 				<img src="assets/imgs/lisbon-3.jpg" alt="lisbon">
 				<h3>lisbon</h3>
@@ -238,13 +242,13 @@
 		</div>
 	</section>
 
-	<section class="section-plans section-spacing">
+	<section class="section-plans section-spacing js-section-plans" id="plans">
 		<div class="row">
 			<h2>Start eating healthy today</h2>
 		</div>
 		<div class="row">
 			<div class="col span-1-of-3">
-				<div class="plan-box">
+				<div class="plan-box js-wp-4">
 					<div>
 						<h3>Premium</h3>
 						<p class="plan-price">399$ <span>/ month</span></p>
@@ -398,9 +402,18 @@
 			<p>Copyright &copy; 2020 by OmniFood. All rights reserved.</p>
 		</div>
 	</footer>
+    
+    <!-- JQuery   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Icon   -->
 	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <!--https://www.jsdelivr.com/?docs=gh-->
+    <!-- to make the webpage more responsive -->
+	<script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5@1.0.5/lib/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selective-whitespace@1.0.4/index.min.js"></script>
+    <!-- Waypoints triggers a function when scrolling to an element -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
