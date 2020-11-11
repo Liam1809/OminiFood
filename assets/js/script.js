@@ -8,7 +8,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     }, {
-    	offset: '60px;'
+    	offset: '80spx;'
     });
     // scroll on buttons
     $('.js-scroll-to-plans').click(function() {
@@ -80,5 +80,17 @@ $(document).ready(function() {
         $('.js-wp-4').addClass('animated animate__pulse');
     }, {
      offset: '50%'   
+    });
+    
+    $('.mobile-nav-icon').click(function() {
+        let nav = $('.js-main-nav');
+        let icon = $('.js-nav-icon ion-icon');
+        if(icon.attr('name') == 'menu-outline') {
+            icon.attr('name','close-outline');
+        }
+        else {
+            icon.attr('name','menu-outline');
+        }
+        nav.slideToggle(200);
     });
 });
