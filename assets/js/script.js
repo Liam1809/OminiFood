@@ -65,7 +65,7 @@ $(document).ready(function() {
     });
     
     $('.js-wp-2').waypoint(function(direction) {
-        $('.js-wp-2').addClass('animated animate__fadeInUps');
+        $('.js-wp-2').addClass('animated animate__fadeInUp');
     }, {
      offset: '50%'   
     });

@@ -192,8 +192,8 @@ input[type="submit"]:active {
 /* HEADER */
 /*--------------------------*/
 header {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("img/hero.jpg");
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("img/hero-min.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero-min.jpg");
 	background-size: cover; 
 	background-attachment: fixed;
 	height: 100vh;
@@ -203,7 +203,7 @@ header {
 	position: absolute;
 	width: 1140px;
 	top: 50%;
-	left: 50%;
+	left: 50%;s
 	/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate*/
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -415,8 +415,8 @@ header {
 /* TESTIMONIALS SECTION */
 /*--------------------------*/
 .section-testimonials {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/back-customers.jpg);
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/back-customers-min.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers-min.jpg);
 	background-size: cover;
 	color: #fff;
 	background-attachment: fixed;
